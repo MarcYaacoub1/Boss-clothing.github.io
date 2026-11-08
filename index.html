@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>BOSS CLOTHING OFFICE — 3D Showroom</title>
+    <title>BOSS CLOTHING OFFICE </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -826,6 +826,40 @@
           grid-template-columns:1fr;
         }
       }
+      .promo {
+        background:var(--bg3);
+        padding-top:30px;
+      }
+
+      .promo-box {
+        background:linear-gradient(135deg,var(--bg1),var(--card));
+        border-radius:28px;
+        padding:clamp(26px,5vw,56px);
+        display:flex;
+        flex-direction:column;
+        gap:16px;
+        align-items:flex-start;
+        box-shadow:0 20px 60px var(--sh);
+      }
+
+      .promo-box small {
+        font-weight:700;
+        letter-spacing:.14em;
+        opacity:.75;
+      }
+
+      .promo-box p {
+        font-size:17px;
+        line-height:1.6;
+        max-width:52ch;
+        opacity:.9;
+      }
+
+      .credit {
+        font-size:13px;
+        opacity:.75;
+        text-decoration:underline;
+      }
     </style>
   </head>
   <body>
@@ -918,11 +952,23 @@
         <a class="btn" href="tel:+201222371756" data-i="call">CALL NOW</a>
       </div>
     </section>
-    <footer class="rv">
+    <section class="s promo" id="webprime">
+        <div class="promo-box rv">
+          <small data-i="w0">WEBSITE BY WEB.PRIME</small>
+          <h2 class="h2" data-i="w1">Want a website like this?</h2>
+          <p data-i="w2">web.prime is a website development agency. We build modern, bilingual websites with thoughtful design, clear structure and a focus on your goals. Tell us your idea and let’s talk.</p>
+          <div class="row">
+            <a class="btn g" style="flex:none" href="https://web-prime0.vercel.app/" target="_blank" rel="noopener" data-i="w3">VISIT WEB.PRIME ↗</a>
+            <a class="btn" href="https://wa.me/201274604866?text=Hi%20web.prime%2C%20I%27d%20like%20to%20discuss%20a%20website%20project." target="_blank" rel="noopener" data-i="w4">WHATSAPP US</a>
+          </div>
+        </div>
+      </section>
+      <footer class="rv">
       <b>BOSS CLOTHING OFFICE</b>
       <span data-i="f1">Connecting Chinese Fashion with Egyptian Business.</span>
+        <a class="credit" href="https://web-prime0.vercel.app/" target="_blank" rel="noopener" data-i="w5">Website by web.prime ↗</a>
     </footer>
-    <a class="fab" href="https://wa.me/201222371756" aria-label="WhatsApp">
+    <a class="fab" href="https://wa.me/201553633075" aria-label="WhatsApp">
       <svg viewBox="0 0 24 24">
         <path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2z"/>
       </svg>
@@ -931,10 +977,22 @@
     <script>
       var I = {
           en: {
-              n1: "Showroom", s1: "The Collection", n2: "About", n3: "Contact", n4: "Shipping", n5: "Products", p1: "All products", p2: "Tap any piece to see its details.", v3: "VIEW IN 3D", r1: "China to Egypt.", r2: "From China’s wholesale markets to Egyptian businesses, shipment after shipment.", h1: "Wholesale fashion, in 3D.", hint: "Drag to browse · tap a piece for a guided tour ↗", drag: "Drag to rotate the jacket.", ask: "ASK ON WHATSAPP", call: "CALL NOW", a1: "YOUR WHOLESALE CLOTHING CONNECTION FROM CHINA TO EGYPT.", a2: "BOSS CLOTHING OFFICE connects China’s clothing market with Egyptian businesses, providing wholesale clothing sourcing and supply opportunities.", c1: "Talk to us on WhatsApp.", f1: "Connecting Chinese Fashion with Egyptian Business."
+              n1: "Showroom", s1: "The Collection", n2: "About", n3: "Contact", n4: "Shipping", n5: "Products",
+            w0: "WEBSITE BY WEB.PRIME",
+            w1: "Want a website like this?",
+            w2: "web.prime is a website development agency. We build modern, bilingual websites with thoughtful design, clear structure and a focus on your goals. Tell us your idea and let’s talk.",
+            w3: "VISIT WEB.PRIME ↗",
+            w4: "WHATSAPP US",
+            w5: "Website by web.prime ↗", p1: "All products", p2: "Tap any piece to see its details.", v3: "VIEW IN 3D", r1: "China to Egypt.", r2: "From China’s wholesale markets to Egyptian businesses, shipment after shipment.", h1: "Wholesale fashion, in 3D.", hint: "Drag to browse · tap a piece for a guided tour ↗", drag: "Drag to rotate the jacket.", ask: "ASK ON WHATSAPP", call: "CALL NOW", a1: "YOUR WHOLESALE CLOTHING CONNECTION FROM CHINA TO EGYPT.", a2: "BOSS CLOTHING OFFICE connects China’s clothing market with Egyptian businesses, providing wholesale clothing sourcing and supply opportunities.", c1: "Talk to us on WhatsApp.", f1: "Connecting Chinese Fashion with Egyptian Business."
           },
           ar: {
-              n1: "المعرض", s1: "التشكيلة", n2: "من نحن", n3: "تواصل", n4: "الشحن", n5: "المنتجات", p1: "كل المنتجات", p2: "اضغط على أي قطعة عشان تشوف تفاصيلها.", v3: "شوفه 3D", r1: "من الصين لمصر.", r2: "من أسواق الجملة في الصين لتجار مصر، شحنة ورا شحنة.", h1: "جملة الموضة… بتجسيم 3D", hint: "اسحب للتصفح · واضغط على أي قطعة لجولة تعريفية ↗", drag: "اسحب لتدوير الجاكيت.", ask: "اسأل على واتساب", call: "اتصل الآن", a1: "همزة الوصل لجملة الملابس من الصين إلى مصر.", a2: "بوس كلوذينج أوفيس بيربط سوق الملابس الصيني بالتجار في مصر، وبيوفر فرص توريد وجملة للملابس.", c1: "كلمنا على واتساب.", f1: "نوصّل الموضة الصينية لسوق مصر."
+              n1: "المعرض", s1: "التشكيلة", n2: "من نحن", n3: "تواصل", n4: "الشحن", n5: "المنتجات",
+            w0: "موقع من تنفيذ web.prime",
+            w1: "عايز موقع زي ده؟",
+            w2: "web.prime شركة تطوير مواقع. بنبني مواقع عصرية بأكتر من لغة بتصميم متقن وهيكل واضح وبنركّز على أهدافك. احكيلنا فكرتك ونتكلم.",
+            w3: "زور web.prime ↗",
+            w4: "كلمنا على واتساب",
+            w5: "موقع من تنفيذ web.prime ↗", p1: "كل المنتجات", p2: "اضغط على أي قطعة عشان تشوف تفاصيلها.", v3: "شوفه 3D", r1: "من الصين لمصر.", r2: "من أسواق الجملة في الصين لتجار مصر، شحنة ورا شحنة.", h1: "جملة الموضة… بتجسيم 3D", hint: "اسحب للتصفح · واضغط على أي قطعة لجولة تعريفية ↗", drag: "اسحب لتدوير الجاكيت.", ask: "اسأل على واتساب", call: "اتصل الآن", a1: "همزة الوصل لجملة الملابس من الصين إلى مصر.", a2: "بوس كلوذينج أوفيس بيربط سوق الملابس الصيني بالتجار في مصر، وبيوفر فرص توريد وجملة للملابس.", c1: "كلمنا على واتساب.", f1: "نوصّل الموضة الصينية لسوق مصر."
           }
       };
       var P = [{
